@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="coffeeproject.css" rel="stylesheet">
+    <title>HighFives Coffee!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body onload="showAlert()">
+    <div class="grid-container">
+         <div class="menu"> 
+             <!-- start of menu bar  -->
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Coffee"><span class="logo">HighFives</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link history" href="https://en.wikipedia.org/wiki/History_of_coffee">History of Coffee</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Login
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Registration</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipping</a></li>
+                                    <li><a class="dropdown-item" href="#">Returns</a></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Coffee</a></li>
+                                    <li><a class="dropdown-item" href="#">Whole Bean</a></li>
+                                    <li><a class="dropdown-item" href="#">Ground</a></li>
+                                    <li><a class="dropdown-item" href="#">Expresso</a></li>
+                                    <li><a class="dropdown-item" href="#">Medium Roast</a></li>
+                                    <li><a class="dropdown-item" href="#">Bundles</a></li>
+                                    <li><a class="dropdown-item" href="#">E-Gift Cards</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">All Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Welcome!</a>
+                            </li>
+                        </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                    </div>
+                </div>
+            </nav>
+        </div> 
+        </div> 
+        <!-- end of menu bar -->
+
+        <div class="image-container">
+            <!-- <h1>image</h1> -->
+            <img src="assets/coffeebeans.jpeg" class="img-fluid" alt="picture of coffee beans by Jessica Lewis">
+            <h6>Picture by Jessica Lewis</h6>
+        </div>
+
+        <!-- <div class="grid-container"> -->
+        <div class="orderhere">
+            <h1 class="ordertitle">Order here!</h1>
+            <div >
+                <label for="name">Full name</label>
+                <br>
+                <input class="textbar" type="text" name="name" id="name"  placeholder="Enter your full name" autocomplete="cc-name">
+            </div>
+            <div>
+                <label for="email">Email address</label>
+                <br>
+                <input  class="textbar" type="email" name="email" id="email" placeholder="name@example.com" autocomplete="email">
+            </div>
+        </div>
+        <div class="coffeetogo">
+            <h1>Coffee to GO</h1>
+            <div class="item1">
+                <div>
+                <input type="radio" name="drinktype" id="coffee" value="coffee">
+                <label for="coffee">Coffee</label>
+                </div>
+                <div>
+                <input type="radio" name="drinktype" id="blacktea" value="black tea">
+                <label for="blacktea">Black tea</label>
+                </div>
+                <div>
+                <input type="radio" name="drinktype" id="Americano" value="americano">
+                <label for="Americano">Americano</label> 
+                </div>
+                <div>
+                <input type="radio" name="drinktype" id="Latte" value="latte">
+                <label for="Latte">Latte</label>
+                </div>
+                <div>
+                <input type="radio" name="drinktype" id="mocha" value="mocha">
+                <label for="mocha">Mocha</label>
+                </div>
+            </div>
+        </div>
+        <div class="shots">
+            <h1>Shots</h1>
+            <div class="item1">
+                <div>
+                <input type="checkbox" name="shottype" id="expresso" value="expresso">
+                <label for="expresso">Expresso</label>
+                </div>
+                <div>
+                <input type="checkbox" name="shottype" id="caramel" value="caramel">
+                <label for="caramel">Caramel</label>
+                </div>
+                <div>
+                <input type="checkbox" name="shottype" id="hazelnut" value="hazelnut">
+                <label for="hazelnut">Hazelnut</label>
+                </div> 
+            </div>
+        </div>
+        <div class="milk">
+            <h1>Milk</h1>
+            <div class="item1">
+                <div>
+                <input type="radio" name="ingredienttype" id="wholemilk" value="whole milk">
+                <label for="wholemilk">Whole Milk</label>
+                </div>
+                <div>
+                <input type="radio" name="ingredienttype" id="oatmilk" value="oat milk">
+                <label for="oatmilk">Oat Milk</label>
+                </div>
+                <div>
+                <input type="radio" name="ingredienttype" id="soymilk" value="soy milk">
+                <label for="soymilk">Soy Milk</label> 
+                </div>
+                <div>
+                <input type="radio" name="ingredienttype" id="nomilk" value="no milk">
+                <label for="nomilk">No Milk</label>
+                </div>
+            </div>
+        </div>
+        <div class="notes">
+            <h1>Special Instructions</h1>
+            <label for="specialrequest"></label> 
+            <textarea class="textbox" name="drinktype" id="specialrequest"></textarea>
+        </div>
+        <div class="Submit">
+            <button onclick="getOrderInfo()" class="submitbutton" type="button">Submit Order</button>
+        </div>
+            
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="coffeeproject.js"></script>
+</body>
+</html>
